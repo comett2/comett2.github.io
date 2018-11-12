@@ -10,7 +10,7 @@ import { RecipeRepository } from '../../infrastructure/RecipeRepository';
 })
 export class SearchComponent implements OnInit {
 
-	private searchForm: FormGroup;
+	searchForm: FormGroup;
 
 	constructor(private formBuilder: FormBuilder,
 				private recipeRepository: RecipeRepository) {
