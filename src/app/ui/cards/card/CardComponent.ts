@@ -21,4 +21,7 @@ export class CardComponent implements OnInit {
 	}
 
 
+	addRecipe(): void {
+		alert('I tak Cie Kocham')
+	}
 }
