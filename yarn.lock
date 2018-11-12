@@ -555,6 +555,12 @@ angular-cli-ghpages@^0.5.3:
     fs-extra "3.0.1"
     gh-pages "0.12.0"
 
+angularx-social-login@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/angularx-social-login/-/angularx-social-login-1.2.3.tgz#f3f14a620e83202a70ba49d944a26d75c72df427"
+  dependencies:
+    typescript "^2.7.2"
+
 ansi-colors@^3.0.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.1.tgz#9638047e4213f3428a11944a7d4b31cba0a3ff95"
@@ -6043,6 +6049,10 @@ typedarray@^0.0.6:
 typescript@3.1.6, typescript@~3.1.6:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"
+
+typescript@^2.7.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
 
 uglify-es@^3.3.4:
   version "3.3.9"

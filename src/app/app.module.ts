@@ -17,6 +17,11 @@ import { CardComponent } from './ui/cards/card/CardComponent';
 import { reducers } from './CookbookReducers';
 import { SearchComponent } from './ui/search/SearchComponent';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RecipeDetailComponent } from './ui/details/RecipeDetailComponent';
+import { RecipesComponent } from './ui/recipes/RecipesComponent';
+import { SocialLoginModule } from 'angularx-social-login';
+import { getAuthServiceConfigs } from '../../socialloginConfig';
+import { LoginComponent } from './login/LoginComponent';
 
 const STORE_FEATURE = 'COOKBOOK';
 
@@ -36,6 +41,7 @@ const STORE_FEATURE = 'COOKBOOK';
 		]),
 		StoreModule.forRoot({}),
 		EffectsModule.forRoot([]),
+		// SocialLoginModule.initialize(getAuthServiceConfigs()),
 	],
 	declarations: [
 		AppComponent,
@@ -43,7 +49,10 @@ const STORE_FEATURE = 'COOKBOOK';
 		SideBarComponent,
 		CardsComponent,
 		CardComponent,
-		SearchComponent
+		SearchComponent,
+		RecipeDetailComponent,
+		RecipesComponent,
+		// LoginComponent
 	],
 	providers: [
 		{ provide: 'STORE_FEATURE', useValue: STORE_FEATURE},

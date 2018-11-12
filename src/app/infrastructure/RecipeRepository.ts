@@ -29,6 +29,17 @@ export class RecipeRepository {
 				   );
 	}
 
+	selectOne(id: string): Observable<any> {
+		return this.store.select(state => {
+					   return state[this.storeFeature].recipes;
+				   })
+				   .pipe(
+					   map((state: RecipeState) => {
+						   return state.recipes.filter((recipe: Recipe) => recipe.id == id)[0];
+					   })
+				   );
+	}
+
 	search(value: string): void {
 		this.store.dispatch(new SearchAction(value));
 	}
