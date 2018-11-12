@@ -1,13 +1,15 @@
 {
 	"name": "cookbook",
 	"version": "0.0.0",
+	"license": "MIT",
 	"scripts": {
 		"ng": "ng",
-		"start": "ng serve",
-		"build": "ng build",
+		"start": "node server.js",
+		"build": "ng build --prod",
 		"test": "ng test",
 		"lint": "ng lint",
-		"e2e": "ng e2e"
+		"e2e": "ng e2e",
+		"postinstall": "ng build --aot --prod"
 	},
 	"private": true,
 	"dependencies": {
@@ -31,9 +33,7 @@
 		"ngx-bootstrap": "^3.1.1",
 		"popper.js": "^1.14.3",
 		"rxjs": "~6.3.3",
-		"zone.js": "~0.8.26"
-	},
-	"devDependencies": {
+		"zone.js": "~0.8.26",
 		"@angular-devkit/build-angular": "~0.10.0",
 		"@angular/cli": "~7.0.5",
 		"@angular/compiler-cli": "~7.0.0",
@@ -53,5 +53,12 @@
 		"ts-node": "~7.0.0",
 		"tslint": "~5.11.0",
 		"typescript": "~3.1.6"
+	},
+	"devDependencies": {
+
+	},
+	"engines": {
+		"node": "9.6.1",
+		"npm": "5.6.0"
 	}
 }
