@@ -52,7 +52,7 @@ const STORE_FEATURE = 'COOKBOOK';
 		SearchComponent,
 		RecipeDetailComponent,
 		RecipesComponent,
-		// LoginComponent
+		LoginComponent
 	],
 	providers: [
 		{ provide: 'STORE_FEATURE', useValue: STORE_FEATURE},
