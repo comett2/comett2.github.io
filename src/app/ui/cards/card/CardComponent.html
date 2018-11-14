@@ -2,10 +2,13 @@
 	<div class="recipe-data">
 		<div class="recipe-image">
 			<img class="image"
+				 [routerLink]="['/recipe', recipe.id]" routerLinkActive="active"
 				 [src]="recipe.image"/>
 		</div>
 		<div class="recipe-name">
-			{{recipe.name}}
+			<a [routerLink]="['/recipe', recipe.id]" routerLinkActive="active">
+				{{recipe.name}}
+			</a>
 		</div>
 	</div>
 	<div class="add-button"

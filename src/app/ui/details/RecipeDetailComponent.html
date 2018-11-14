@@ -1,1 +1,34 @@
-detail {{recipe?.id}}
+<div class="recipe-main-header-detail">
+	<div class="go-back-button">
+		<a routerLink="/recipes"
+		   routerLinkActive="active">
+			<i class="fas fa-chevron-left"></i>
+		</a>
+	</div>
+	<div class="recipe-name">
+		{{recipe.name}}
+	</div>
+</div>
+<div class="recipe-details-columns">
+	<div class="column">
+		<div class="header">
+			Ingredients
+		</div>
+		<div class="content">
+			<ul>
+				<li *ngFor="let ingredient of recipe.ingredients">
+					{{ingredient.amount.value + ' ' + ingredient.amount.type + ' ' + ingredient.name}}
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header">
+			Preparation
+		</div>
+		<div class="content">
+			Ciasteczka rozdrobnić w melakserze razem z miękkim masłem, wyłożyć na spód tortownicy o średnicy ok. 23 - 24 cm (dno wyścielone papierem).
+			Dokładnie uklepać, wstawić do lodówki.
+		</div>
+	</div>
+</div>

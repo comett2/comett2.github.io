@@ -8,6 +8,7 @@ import { Recipe } from '../../domain/Recipe';
 @Component({
 	selector: 'sp-recipe-detail',
 	templateUrl: `RecipeDetailComponent.html`,
+	styleUrls: ['RecipeDetailComponent.sass'],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeDetailComponent implements OnInit {
